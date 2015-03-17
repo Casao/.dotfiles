@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ZSH="$HOME/.oh-my-zsh"
+
 if [ ! -d "$ZSH/custom/plugins/k" ]; then
   git clone git@github.com:supercrabtree/k.git $ZSH/custom/plugins/k
 fi
