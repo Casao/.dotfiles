@@ -1,0 +1,11 @@
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[user]
+	name = Colin Ewen
+	email = colin@draecas.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/colinewen/.gitignore
