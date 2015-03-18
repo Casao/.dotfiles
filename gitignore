@@ -3,3 +3,8 @@
 .gemtags
 .idea/
 .bundle/
+._*
+.cache
+.Spotlight-V100
+.Trashes
+*.sass-cache

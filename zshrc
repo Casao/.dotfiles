@@ -55,9 +55,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/var/rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -68,24 +65,19 @@ else
   export EDITOR='subl -w'
 fi
 
-# plenv
+# __env
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PYENV_ROOT=/usr/local/opt/pyenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
-export DOCKER_CERT_PATH=/Users/cewen/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
-
+# Aliases
 alias cdg='cd-gitroot'
 alias git-prune='git branch --merged | grep -Ev "\*|develop|master" | xargs -n 1 git branch -d'
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+alias rm='trash'
 
 # added by travis gem
 [ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-export PYENV_ROOT=/usr/local/opt/pyenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+

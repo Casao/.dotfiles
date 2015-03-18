@@ -1,0 +1,9 @@
+{
+  "directory": "bower_components",
+  "analytics": false,
+  "storage": {
+  "cache" : "~/.bower/cache",
+  "registry" : "~/.bower/registry"
+  },
+  "tmp": "~/.bower/tmp"
+}
