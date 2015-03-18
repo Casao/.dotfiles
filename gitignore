@@ -1,3 +1,5 @@
 .DS_Store
 .tags*
 .gemtags
+.idea/
+.bundle/

@@ -8,4 +8,6 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/colinewen/.gitignore
+	excludesfile = ~/.gitignore
+[init]
+  templatedir = ~/.git_template
