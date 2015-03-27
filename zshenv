@@ -1,9 +1,9 @@
 export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-ARCHFLAGS="-arch x86_64"
-DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
-DOCKER_TLS_VERIFY=1
-DOCKER_HOST=tcp://192.168.59.103:2376
-SSL_CERT_PATH=/usr/local/etc/openssl/certs/
-PYENV_ROOT=/usr/local/opt/pyenv
-RBENV_ROOT=/usr/local/opt/rbenv
-PLENV_ROOT=/usr/local/opt/plenv
+export ARCHFLAGS="-arch x86_64"
+export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/ca-bundle.pem
+export PYENV_ROOT=/usr/local/opt/pyenv
+export RBENV_ROOT=/usr/local/opt/rbenv
+export PLENV_ROOT=/usr/local/opt/plenv
