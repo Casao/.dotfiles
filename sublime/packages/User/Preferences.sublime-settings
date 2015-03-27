@@ -1,0 +1,24 @@
+{
+	"color_scheme": "Packages/User/3024_Day.tmTheme",
+	"font_face": "Source Code Pro",
+	"font_size": 13,
+	"hightlight_modified_tabs": true,
+	"tab_size": 2,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Soda Light 3.sublime-theme",
+	"file_exclude_patterns": [
+		".tags",
+		".tags_sorted_by_file",
+		".gemtags",
+		".DS_Store"
+	],
+	"folder_exclude_patterns": [
+		".idea",
+		".sass-cache",
+		".bundle",
+		".git"
+	]
+}
