@@ -1,0 +1,43 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"4GL",
+		"Alignment",
+		"Better CoffeeScript",
+		"Better RSpec",
+		"Color Highlighter",
+		"ColorPicker",
+		"Colorsublime",
+		"Compare Side-By-Side",
+		"CSScomb",
+		"CSSTidy",
+		"CTags",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"Emmet",
+		"Git",
+		"Github Tools",
+		"Gutter Color",
+		"HTMLBeautify",
+		"INI",
+		"JSONLint",
+		"Keymaps",
+		"Markdown Preview",
+		"Package Control",
+		"Pretty JSON",
+		"RSpec",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-csslint",
+		"SublimeLinter-haml",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-rubocop",
+		"Theme - Soda"
+	]
+}
