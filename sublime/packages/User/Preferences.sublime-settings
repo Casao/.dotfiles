@@ -20,5 +20,6 @@
     ".sass-cache",
     ".bundle",
     ".git"
-  ]
+  ],
+  "ensure_newline_at_eof_on_save": true
 }
