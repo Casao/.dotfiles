@@ -14,3 +14,10 @@ ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[094]%}═%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}✭%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="✔%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}"
+
+## run TRAPALRM every $TMOUT seconds
+TMOUT=60 # refresh the terminal prompt every 60 seconds
+
+TRAPALRM () {
+    zle reset-prompt # refreshs the terminal prompt
+}
