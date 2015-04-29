@@ -90,4 +90,4 @@ alias rm='trash'
 # added by travis gem
 [ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
 
-
+if which dnvm.sh > /dev/null; then source dnvm.sh; fi
