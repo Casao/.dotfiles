@@ -91,3 +91,13 @@ alias rm='trash'
 [ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
 
 if which dnvm.sh > /dev/null; then source dnvm.sh; fi
+
+vsc () {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
+        open -a "Visual Studio Code" --args "$F"
+    fi
+}
