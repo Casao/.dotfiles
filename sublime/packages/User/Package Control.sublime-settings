@@ -37,6 +37,7 @@
 		"SublimeLinter-annotations",
 		"SublimeLinter-csslint",
 		"SublimeLinter-haml",
+		"SublimeLinter-html-tidy",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-rubocop",
