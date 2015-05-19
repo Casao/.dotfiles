@@ -1,8 +1,4 @@
-
-AllCops:
-  Documentation:
-    Enabled: false
-
+#Rubocop config to keep in line with our changes to the style guide
 Encoding:
   Enabled: false
 
@@ -12,5 +8,5 @@ LineLength:
 CommentAnnotation:
   Enabled: false
 
-Style/StringLiterals:
+Documentation:
   Enabled: false
