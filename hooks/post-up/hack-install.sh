@@ -13,4 +13,3 @@ function install_hack {
 if [ ! -n "$(find ~/Library/Fonts -type f -name 'Hack-*' -print -quit)" ]; then
   install_hack
 fi
-
