@@ -6,3 +6,4 @@ export DOCKER_HOST=tcp://boot2docker:2376
 export PYENV_ROOT=/usr/local/opt/pyenv
 export PLENV_ROOT=/usr/local/opt/plenv
 export RBENV_ROOT=/usr/local/var/rbenv
+export HOMEBREW_GITHUB_API_TOKEN=0cc6fbc6ec6fc01a704dab4814a0491009403524
