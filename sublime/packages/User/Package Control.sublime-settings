@@ -36,6 +36,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-perlcritic",
 		"SublimeLinter-csslint",
 		"SublimeLinter-haml",
 		"SublimeLinter-html-tidy",

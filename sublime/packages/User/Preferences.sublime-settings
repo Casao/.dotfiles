@@ -15,8 +15,8 @@
 		".bundle",
 		".git"
 	],
-	"font_face": "Source Code Pro",
-	"font_size": 13,
+	"font_face": "Hack",
+	"font_size": 12,
 	"hightlight_modified_tabs": true,
 	"ignored_packages":
 	[
