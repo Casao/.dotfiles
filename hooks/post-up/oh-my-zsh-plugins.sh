@@ -13,3 +13,7 @@ fi
 if [ ! -d "$ZSH/custom/plugins/cd-gitroot" ]; then
   git clone git@github.com:mollifier/cd-gitroot.git $ZSH/custom/plugins/cd-gitroot
 fi
+
+if [ ! -d "$ZSH/custom/plugins/git-prune" ]; then
+  git clone git@github.com:Seinh/git-prune.git $ZSH/custom/plugins/git-prune
+fi

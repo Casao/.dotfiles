@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/3024_Day (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Dracula (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -22,6 +22,11 @@
 	[
 		"Vintage"
 	],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
 	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme"
+	"theme": "Hero Dark.sublime-theme"
 }

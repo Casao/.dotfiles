@@ -17,6 +17,7 @@
 		"CSSTidy",
 		"CTags",
 		"Dockerfile Syntax Highlighting",
+		"Dracula Color Scheme",
 		"EditorConfig",
 		"Emmet",
 		"Fix Mac Path",
@@ -48,6 +49,7 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-rubocop",
+		"Theme - Hero",
 		"Theme - Soda"
 	]
 }
