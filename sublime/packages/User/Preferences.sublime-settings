@@ -22,11 +22,11 @@
 	[
 		"Vintage"
 	],
-  "indent_guide_options":
-  [
-    "draw_normal",
-    "draw_active"
-  ],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
 	"tab_size": 2,
 	"theme": "Hero Dark.sublime-theme"
 }
