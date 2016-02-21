@@ -1,0 +1,9 @@
+export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export ARCHFLAGS="-arch x86_64"
+export PYENV_ROOT=/usr/local/opt/pyenv
+export PLENV_ROOT=/usr/local/opt/plenv
+export RBENV_ROOT=/usr/local/var/rbenv
+export NODENV_ROOT=/usr/local/var/nodenv
+export GOPATH=/usr/local/opt/go/
+export SSL_CERT_FILE=/System/Library/OpenSSL/cert.pem
+export DEFAULT_USER='colinewen'
