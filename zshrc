@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cfe"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -50,7 +50,7 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git k cd-gitroot brew zsh-syntax-highlighting colorize cp colored-man copyfile bundler gem rbenv osx docker sublime)
+plugins=(git k hub cd-gitroot brew zsh-syntax-highlighting colorize cp colored-man copyfile bundler gem rbenv osx docker sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,6 +81,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # Aliases
 alias cdg='cd-gitroot'

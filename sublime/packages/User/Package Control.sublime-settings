@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -18,6 +19,7 @@
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
+		"Fix Mac Path",
 		"Gist",
 		"Github Tools",
 		"Gutter Color",
@@ -34,6 +36,7 @@
 		"rspec-snippets",
 		"RSpecNavigator",
 		"Sass",
+		"Shell Exec",
 		"SideBarEnhancements",
 		"SublimeGit",
 		"SublimeLinter",

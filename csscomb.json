@@ -13,9 +13,8 @@
   "space-before-combinator": 1,
   "space-before-opening-brace": 1,
   "space-before-selector-delimiter": 0,
-  "tab-size": 4,
+  "tab-size": 2,
   "unitless-zero": true,
   "space-before-closing-brace": "\n",
   "space-after-closing-brace": "\n"
-
 }
