@@ -22,6 +22,7 @@
 		"Emmet",
 		"Fix Mac Path",
 		"Gist",
+		"GitGutter",
 		"Github Tools",
 		"Gutter Color",
 		"HTMLBeautify",
@@ -50,6 +51,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-rubocop",
 		"Theme - Hero",
-		"Theme - Soda"
+		"Theme - Soda",
+		"URLEncode"
 	]
 }
