@@ -12,7 +12,7 @@ function installCask {
   fi
 }
 
-installHomebrew trash
+installHomebrew 'trash'
 brew tap --full caskroom/cask
 brew tap --full caskroom/versions
 installCask 'sublime-text3'
