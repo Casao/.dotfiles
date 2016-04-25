@@ -12,3 +12,7 @@ fi
 if [ ! brew cask list --versions sublime-text3 ]; then
   brew cask install sublime-text3
 fi
+
+if [ ! brew cask list --versions iterm2-beta ]; then
+  brew cask install iterm2-beta
+fi
