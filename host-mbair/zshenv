@@ -7,3 +7,4 @@ export SSL_CERT_FILE=/usr/local/etc/openssl/certs/ca-bundle.pem
 export PYENV_ROOT=/usr/local/opt/pyenv
 export RBENV_ROOT=/usr/local/opt/rbenv
 export PLENV_ROOT=/usr/local/opt/plenv
+source "$HOME/.private_env"

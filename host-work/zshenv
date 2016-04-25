@@ -7,7 +7,7 @@ export PYENV_ROOT=/usr/local/opt/pyenv
 export PLENV_ROOT=/usr/local/opt/plenv
 export RBENV_ROOT=/usr/local/var/rbenv
 export NODENV_ROOT=/usr/local/var/nodenv
-export HOMEBREW_GITHUB_API_TOKEN=e2f5018e2ea85a0eefa1b12a263a9b84434e1450
 export GOPATH=/usr/local/opt/go/
 export SSL_CERT_FILE=/System/Library/OpenSSL/cert.pem
 export DEFAULT_USER='cewen'
+source "$HOME/.private_env"

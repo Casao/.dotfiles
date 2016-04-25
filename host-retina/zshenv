@@ -7,3 +7,4 @@ export NODENV_ROOT=/usr/local/var/nodenv
 export GOPATH=/usr/local/opt/go/
 export SSL_CERT_FILE=/System/Library/OpenSSL/cert.pem
 export DEFAULT_USER='colinewen'
+source "$HOME/.private_env"
