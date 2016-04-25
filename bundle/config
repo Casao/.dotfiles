@@ -1,4 +1,7 @@
 ---
-BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
+BUNDLE_BUILD__NOKOGIRI: --use-system-libraries
 BUNDLE_BUILD__NOKOGUMBO: ''
-BUNDLE_BUILD__LIBV8: "-- --with-system-v8"
+BUNDLE_BUILD__LIBV8: -- --with-system-v8
+BUNDLE_GEM__TEST: rspec
+BUNDLE_GEM__MIT: false
+BUNDLE_GEM__COC: false
