@@ -1,18 +1,27 @@
-#!/bin/bash
+#!/bin/bash -u
 
-if [ ! brew list --versions trash ]; then
-  brew install trash
-fi
+function installHomebrew {
+  if ! brew list --versions "$1"; then
+    brew install $1
+  fi
+}
 
-if [ ! brew list --versions cask ]; then
-  brew install caskroom/cask/brew-cask
-  brew tap --full caskroom/versions
-fi
+function installCask {
+  if ! brew cask list --versions "$1"; then
+    brew cask install $1
+  fi
+}
 
-if [ ! brew cask list --versions sublime-text3 ]; then
-  brew cask install sublime-text3
-fi
-
-if [ ! brew cask list --versions iterm2-beta ]; then
-  brew cask install iterm2-beta
-fi
+installHomebrew trash
+brew tap --full caskroom/cask
+brew tap --full caskroom/versions
+installCask 'sublime-text3'
+installCask 'iterm2-beta'
+installCask 'hipchat'
+installCask 'slack'
+installCask 'google-chrome'
+installCask 'google-chrome-canary'
+installCask 'firefox'
+installCask 'firefoxdeveloperedition'
+installCask 'dash'
+installCask 'alfred'
