@@ -1,5 +1,7 @@
 #!/bin/bash -u
 
+brew update
+
 function installHomebrew {
   if ! brew list --versions "$1"; then
     brew install $1
@@ -13,6 +15,15 @@ function installCask {
 }
 
 installHomebrew 'trash'
+installHomebrew 'rbenv'
+installHomebrew 'pyenv'
+installHomebrew 'plenv'
+installHomebrew 'nodenv'
+installHomebrew 'go'
+installHomebrew 'ctags'
+installHomebrew 'rbenv-ctags'
+
+# Cask
 brew tap --full caskroom/cask
 brew tap --full caskroom/versions
 installCask 'sublime-text3'
