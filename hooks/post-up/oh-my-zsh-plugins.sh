@@ -17,3 +17,7 @@ fi
 if [ ! -d "$ZSH/custom/plugins/git-prune" ]; then
   git clone git@github.com:Seinh/git-prune.git $ZSH/custom/plugins/git-prune
 fi
+
+if [ ! -d "$ZSH/custom/plugins/zsh-notify" ]; then
+  git clone git@github.com:marzocchi/zsh-notify.git $ZSH/custom/plugins/zsh-notify
+fi

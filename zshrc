@@ -50,7 +50,7 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cd-gitroot colored-man-pages gem git git-prune hub k osx rbenv sublime zsh-syntax-highlighting)
+plugins=(brew bundler cd-gitroot colored-man-pages gem git git-prune hub k osx rbenv sublime zsh-notify zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,7 +85,6 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # Aliases
 alias cdg='cd-gitroot'
-alias git-prune='git branch --merged | grep -Ev "\*|develop|master" | xargs -n 1 git branch -d'
 alias rm='trash'
 
 # added by travis gem
@@ -102,3 +101,4 @@ vsc () {
         open -a "Visual Studio Code" --args "$F"
     fi
 }
+
