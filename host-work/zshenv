@@ -9,5 +9,6 @@ export RBENV_ROOT=/usr/local/var/rbenv
 export NODENV_ROOT=/usr/local/var/nodenv
 export GOPATH=/usr/local/opt/go/
 export SSL_CERT_FILE="$HOME/cert_file.pem"
+export CURL_CA_BUNDLE="$HOME/cert_file.pem"
 export DEFAULT_USER='cewen'
 source "$HOME/.private_env"
