@@ -14,25 +14,26 @@ function installCask {
   fi
 }
 
-installHomebrew 'trash'
-installHomebrew 'rbenv'
-installHomebrew 'pyenv'
-installHomebrew 'plenv'
-installHomebrew 'nodenv'
-installHomebrew 'go'
 installHomebrew 'ctags'
+installHomebrew 'go'
+installHomebrew 'nodenv'
+installHomebrew 'plenv'
+installHomebrew 'pyenv'
+installHomebrew 'rbenv'
 installHomebrew 'rbenv-ctags'
+installHomebrew 'trash'
 
 # Cask
 brew tap --full caskroom/cask
 brew tap --full caskroom/versions
-installCask 'sublime-text3'
-installCask 'iterm2-beta'
-installCask 'hipchat'
-installCask 'slack'
-installCask 'google-chrome'
-installCask 'google-chrome-canary'
-installCask 'firefox'
-installCask 'firefoxdeveloperedition'
 installCask 'alfred'
 installCask 'bettertouchtool'
+installCask 'charles'
+installCask 'firefox'
+installCask 'firefoxdeveloperedition'
+installCask 'google-chrome'
+installCask 'google-chrome-canary'
+installCask 'hipchat'
+installCask 'iterm2-beta'
+installCask 'slack'
+installCask 'sublime-text3'
