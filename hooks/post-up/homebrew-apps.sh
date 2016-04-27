@@ -3,13 +3,13 @@
 brew update
 
 function installHomebrew {
-  if ! brew list --versions "$1"; then
+  if [ ! -n "$(brew list --versions "$1" 2>/dev/null)" ]; then
     brew install $1
   fi
 }
 
 function installCask {
-  if ! brew cask list --versions "$1"; then
+  if [ ! -n "$(brew cask list --versions "$1" 2>/dev/null)" ]; then
     brew cask install $1
   fi
 }
