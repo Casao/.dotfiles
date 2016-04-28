@@ -85,7 +85,9 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # Aliases
 alias cdg='cd-gitroot'
-alias rm='trash'
+if type trash >/dev/null 2>&1; then
+  alias rm='trash'
+fi
 
 # added by travis gem
 [ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
