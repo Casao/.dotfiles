@@ -1,2 +1,2 @@
-unset SSL_CERT_FILE
+export SSL_CERT_FILE="${SSL_CERT_FILE:-'${HOME}/cert_file.pem'}"
 export http_proxy="http://localhost:8888/"

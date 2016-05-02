@@ -9,4 +9,7 @@ export RBENV_ROOT=/usr/local/var/rbenv
 export NODENV_ROOT=/usr/local/var/nodenv
 export GOPATH=/usr/local/opt/go/
 export DEFAULT_USER='cewen'
+export LESSOPEN="|pygmentize %s"
+export LESS=' -R '
+export SSL_CERT_FILE="${HOME}/cert_file.pem"
 source "$HOME/.private_env"

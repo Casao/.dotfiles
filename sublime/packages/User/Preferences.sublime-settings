@@ -28,5 +28,16 @@
 		"draw_active"
 	],
 	"tab_size": 2,
-	"theme": "Hero Dark.sublime-theme"
+	"theme": "Hero Dark.sublime-theme",
+  "rulers": [120],
+  "translate_tabs_to_spaces": true,
+  "draw_minimap_border": true,
+  "always_show_minimap_viewport": true,
+  "highlight_line": true,
+  "trim_trailing_white_space_on_save": true,
+  "save_on_focus_lost": true,
+  "shift_tab_unindent": true,
+  "show_tab_close_buttons": false,
+  "bold_folder_labels": true,
+  "open_files_in_new_window": false
 }
