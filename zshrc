@@ -82,6 +82,7 @@ if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 
 # Aliases
 alias cdg='cd-gitroot'
