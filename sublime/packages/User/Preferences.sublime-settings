@@ -1,5 +1,8 @@
 {
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/SublimeLinter/Dracula (SL).tmTheme",
+	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -17,6 +20,7 @@
 	],
 	"font_face": "Hack",
 	"font_size": 12,
+	"highlight_line": true,
 	"hightlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -27,17 +31,16 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"open_files_in_new_window": false,
+	"rulers":
+	[
+		120
+	],
+	"save_on_focus_lost": true,
+	"shift_tab_unindent": true,
+	"show_tab_close_buttons": false,
 	"tab_size": 2,
 	"theme": "Hero Dark.sublime-theme",
-  "rulers": [120],
-  "translate_tabs_to_spaces": true,
-  "draw_minimap_border": true,
-  "always_show_minimap_viewport": true,
-  "highlight_line": true,
-  "trim_trailing_white_space_on_save": true,
-  "save_on_focus_lost": true,
-  "shift_tab_unindent": true,
-  "show_tab_close_buttons": false,
-  "bold_folder_labels": true,
-  "open_files_in_new_window": false
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
