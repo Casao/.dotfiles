@@ -103,3 +103,5 @@ vsc () {
         open -a "Visual Studio Code" --args "$F"
     fi
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
