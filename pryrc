@@ -26,6 +26,32 @@ Pry::Commands.create_command "generate-token" do
   end
 end
 
+Pry::Commands.create_command "setup-cb-client" do
+  description "Configure CB API Client"
+
+  def process
+    require 'cb_internal'
+
+    Cb.configure do |config|
+      config.dev_key = ENV['CB_DEV_KEY']
+      config.base_uri = 'https://wwwtest.api.careerbuilder.com'
+    end
+  end
+end
+
+Pry::Commands.create_command "setup-cb-client-production" do
+  description "Configure CB API Client"
+
+  def process
+    require 'cb_internal'
+
+    Cb.configure do |config|
+      config.dev_key = ENV['CB_DEV_KEY']
+      config.base_uri = 'https://api.careerbuilder.com'
+    end
+  end
+end
+
 if defined?(PryByebug)
   Pry.commands.alias_command 'c', 'continue'
   Pry.commands.alias_command 's', 'step'
