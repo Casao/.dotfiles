@@ -8,9 +8,11 @@ export PLENV_ROOT=/usr/local/opt/plenv
 export RBENV_ROOT=/usr/local/var/rbenv
 export NODENV_ROOT=/usr/local/var/nodenv
 export SWIFTENV_ROOT=/usr/local/var/swiftenv
-export GOPATH=/usr/local/opt/go/
+export GOPATH="${HOME}/code/golang"
+export GOROOT="/usr/local/opt/go/libexec"
 export DEFAULT_USER='cewen'
 export LESSOPEN="|pygmentize %s"
 export LESS=' -R '
 export SSL_CERT_FILE="${HOME}/cert_file.pem"
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 source "$HOME/.private_env"

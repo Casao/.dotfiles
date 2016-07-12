@@ -90,6 +90,8 @@ if type trash >/dev/null 2>&1; then
   alias rm='trash'
 fi
 
+alias ag='pt'
+
 # added by travis gem
 [ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
 
