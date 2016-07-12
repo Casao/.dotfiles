@@ -23,6 +23,7 @@ installHomebrew 'rbenv'
 installHomebrew 'rbenv-ctags'
 installHomebrew 'trash'
 installHomebrew 'pt'
+installHomebrew 'fzf'
 
 # Cask
 brew tap --full caskroom/cask
