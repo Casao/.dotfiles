@@ -3,6 +3,8 @@ export ARCHFLAGS="-arch x86_64"
 export PYENV_ROOT=/usr/local/opt/pyenv
 export PLENV_ROOT=/usr/local/opt/plenv
 export NODENV_ROOT=/usr/local/var/nodenv
-export GOPATH=/usr/local/opt/go/
+export GOPATH="${HOME}/code/golang"
+export GOROOT="/usr/local/opt/go/libexec"
 export DEFAULT_USER='colinewen'
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 source "$HOME/.private_env"
