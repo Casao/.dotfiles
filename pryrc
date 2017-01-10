@@ -26,12 +26,32 @@ Pry::Commands.create_command "generate-token" do
   end
 end
 
+
+Pry::Commands.create_command "generate-token-test" do
+  description "Generate a CB Client Credentials token for test"
+  command_options keep_retval: true
+
+  def process
+    require 'oauth2-wrapper'
+
+    args = {
+      grant_type: 'client_credentials',
+      client_id: ENV['CB_ID_TEST'],
+      client_secret: ENV['CB_SECRET_TEST'],
+      shared_secret: ENV['CB_SECRET_TEST'],
+      environment: 'test',
+      options: {}
+    }
+
+    client = OAuth2Wrapper::OAuth2ClientFactory.getClient(args)
+    token = client.get_token
+  end
+end
+
 Pry::Commands.create_command "setup-cb-client" do
   description "Configure CB API Client"
 
   def process
-    require 'cb_internal'
-
     Cb.configure do |config|
       config.dev_key = ENV['CB_DEV_KEY']
       config.base_uri = 'https://wwwtest.api.careerbuilder.com'
@@ -43,8 +63,6 @@ Pry::Commands.create_command "setup-cb-client-production" do
   description "Configure CB API Client"
 
   def process
-    require 'cb_internal'
-
     Cb.configure do |config|
       config.dev_key = ENV['CB_DEV_KEY']
       config.base_uri = 'https://api.careerbuilder.com'
