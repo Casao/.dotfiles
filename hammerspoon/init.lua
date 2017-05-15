@@ -92,7 +92,7 @@ end
 -- Bind the Hyper key
 f18 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
 
-k:bind({}, 'up', function() hs.window.focusedWindow():maximize() end)
-k:bind({}, 'left', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
-k:bind({}, 'right', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
+-- k:bind({}, 'up', function() hs.window.focusedWindow():maximize() end)
+-- k:bind({}, 'left', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
+-- k:bind({}, 'right', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
 
