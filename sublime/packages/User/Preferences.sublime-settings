@@ -24,6 +24,7 @@
 	"hightlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"SublimeLinter-jshint",
 		"Vintage"
 	],
 	"indent_guide_options":
