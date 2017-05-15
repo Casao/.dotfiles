@@ -79,10 +79,10 @@ if [ -z "$MATCH" ]; then
     MATCH='TODO'
 fi
 
-for file in `git diff --cached -p --name-status | cut -c3-`; do
-    for match_pattern in $MATCH
-    do
-        check_file $file $match_pattern
-    done
-done
+#for file in `git diff --cached -p --name-status | cut -c3-`; do
+#    for match_pattern in $MATCH
+#    do
+#       check_file $file $match_pattern
+#    done
+#done
 exit
