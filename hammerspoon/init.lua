@@ -14,9 +14,9 @@ local function pressFn(mods, key)
 		mods = {}
 	end
 
-	return function() 
+	return function()
         k.triggered = true
-        hs.eventtap.keyStroke(mods, key, 1000) 
+        hs.eventtap.keyStroke(mods, key, 1000)
     end
 end
 
@@ -63,6 +63,12 @@ k:bind({'cmd', 'alt', 'shift'}, 'i', pressFn({'cmd', 'alt', 'shift'}, 'up'))
 k:bind({'cmd', 'alt', 'shift'}, 'l', pressFn({'cmd', 'alt', 'shift'}, 'right'))
 
 k:bind({}, 'space', pressFn({'cmd'}, 'space'))
+
+k:bind({}, 'c', pressFn({'ctrl'}, 'c'))
+
+k:bind({"cmd"}, "R", function()
+  hs.reload()
+end)
 
 -- Enter Hyper Mode when F18 (Hyper/Capslock) is pressed
 pressedF18 = function()
