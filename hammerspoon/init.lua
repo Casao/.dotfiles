@@ -1,4 +1,5 @@
 hs.window.animationDuration = 0
+switcher = hs.window.switcher.new(hs.window.filter.new():setCurrentSpace(true):setDefaultFilter{})
 
 -- Reload Config
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "R", function()
@@ -61,6 +62,8 @@ k:bind({'cmd', 'alt', 'shift'}, 'k', pressFn({'cmd', 'alt', 'shift'}, 'down'))
 k:bind({'cmd', 'alt', 'shift'}, 'i', pressFn({'cmd', 'alt', 'shift'}, 'up'))
 k:bind({'cmd', 'alt', 'shift'}, 'l', pressFn({'cmd', 'alt', 'shift'}, 'right'))
 
+k:bind({}, 'space', pressFn({'cmd'}, 'space'))
+
 -- Enter Hyper Mode when F18 (Hyper/Capslock) is pressed
 pressedF18 = function()
   k.triggered = false
@@ -92,5 +95,7 @@ end
 w:bind({}, 'i', function() hs.window.focusedWindow():maximize() end)
 w:bind({}, 'j', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
 w:bind({}, 'l', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
+w:bind({}, '[', function() switcher:previous() end)
+w:bind({}, ']', function() switcher:next() end)
 
 k:bind({}, 'w', pressedF19, releasedF19)
