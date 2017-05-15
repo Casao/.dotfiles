@@ -107,4 +107,4 @@ vsc () {
     fi
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.git-fzf.sh ] && source ~/.git-fzf.sh
