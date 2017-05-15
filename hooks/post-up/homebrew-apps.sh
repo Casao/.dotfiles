@@ -23,19 +23,18 @@ installHomebrew 'rbenv'
 installHomebrew 'rbenv-ctags'
 installHomebrew 'trash'
 installHomebrew 'pt'
-installHomebrew 'fzf'
 
 # Cask
-brew tap --full caskroom/cask
-brew tap --full caskroom/versions
-installCask 'alfred'
-installCask 'bettertouchtool'
-installCask 'charles'
-installCask 'firefox'
-installCask 'firefoxdeveloperedition'
-installCask 'google-chrome'
-installCask 'google-chrome-canary'
-installCask 'hipchat'
-installCask 'iterm2-beta'
-installCask 'slack'
-installCask 'sublime-text3'
+# brew tap --full caskroom/cask
+# brew tap --full caskroom/versions
+# installCask 'alfred'
+# installCask 'bettertouchtool'
+# installCask 'charles'
+# installCask 'firefox'
+# installCask 'firefoxdeveloperedition'
+# installCask 'google-chrome'
+# installCask 'google-chrome-canary'
+# installCask 'hipchat'
+# installCask 'iterm2-beta'
+# installCask 'slack'
+# installCask 'sublime-text3'
