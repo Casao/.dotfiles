@@ -70,6 +70,10 @@ k:bind({"cmd"}, "R", function()
   hs.reload()
 end)
 
+k:bind({"cmd"}, 'delete', function()
+  hs.caffeinate.lockScreen()
+end)
+
 -- Enter Hyper Mode when F18 (Hyper/Capslock) is pressed
 pressedF18 = function()
   k.triggered = false
