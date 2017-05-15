@@ -92,20 +92,7 @@ end
 -- Bind the Hyper key
 f18 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
 
-w = hs.hotkey.modal.new({}, 'F19')
+-- k:bind({}, 'i', function() hs.window.focusedWindow():maximize() end)
+-- k:bind({}, 'j', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
+-- k:bind({}, 'l', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
 
-pressedF19 = function()
-  w:enter()
-end
-
-releasedF19 = function()
-  w:exit()
-end
-
-w:bind({}, 'i', function() hs.window.focusedWindow():maximize() end)
-w:bind({}, 'j', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
-w:bind({}, 'l', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
-w:bind({}, '[', function() switcher:previous() end)
-w:bind({}, ']', function() switcher:next() end)
-
-k:bind({}, 'w', pressedF19, releasedF19)
