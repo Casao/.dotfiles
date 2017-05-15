@@ -2,7 +2,6 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/s
 export ARCHFLAGS="-arch x86_64"
 export PYENV_ROOT=/usr/local/opt/pyenv
 export PLENV_ROOT=/usr/local/opt/plenv
-export RBENV_ROOT=/usr/local/var/rbenv
 export NODENV_ROOT=/usr/local/var/nodenv
 export GOPATH="${HOME}/code/golang"
 export GOROOT="/usr/local/opt/go/libexec"

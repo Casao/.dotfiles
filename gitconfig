@@ -19,3 +19,6 @@
 	clean = git-lfs clean %f
 [alias]
 	ctags = !.git/hooks/ctags
+[hooks "confirm"]
+	match = binding.pry
+	match = puts
