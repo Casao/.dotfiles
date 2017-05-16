@@ -84,7 +84,7 @@ end
 --   send ESCAPE if no other keys are pressed.
 releasedF18 = function()
   k:exit()
-  if not k.triggered then
+  if not k.triggered thenw
     hs.eventtap.keyStroke({}, 'ESCAPE')
   end
 end
@@ -92,7 +92,7 @@ end
 -- Bind the Hyper key
 f18 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
 
--- k:bind({}, 'up', function() hs.window.focusedWindow():maximize() end)
--- k:bind({}, 'left', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
--- k:bind({}, 'right', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
+k:bind({'cmd'}, 'w', function() hs.window.focusedWindow():maximize() end)
+k:bind({'cmd'}, 'a', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
+k:bind({'cmd'}, 'd', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
 
