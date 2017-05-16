@@ -22,10 +22,10 @@ end
 
 k = hs.hotkey.modal.new('{}', 'F17')
 
-k:bind({}, 'i', pressFn('up'))
-k:bind({}, 'j', pressFn('left'))
-k:bind({}, 'k', pressFn('down'))
-k:bind({}, 'l', pressFn('right'))
+k:bind({}, 'i', pressFn('up'), nil, pressFn('up'))
+k:bind({}, 'j', pressFn('left'), nil, pressFn('left'))
+k:bind({}, 'k', pressFn('down'), nil, pressFn('down'))
+k:bind({}, 'l', pressFn('right'), nil, pressFn('right'))
 
 k:bind({'shift'}, 'j', pressFn({'shift'}, 'left'))
 k:bind({'shift'}, 'k', pressFn({'shift'}, 'down'))
