@@ -84,7 +84,7 @@ end
 --   send ESCAPE if no other keys are pressed.
 releasedF18 = function()
   k:exit()
-  if not k.triggered thenw
+  if not k.triggered then
     hs.eventtap.keyStroke({}, 'ESCAPE')
   end
 end
