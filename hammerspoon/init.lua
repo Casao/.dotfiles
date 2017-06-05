@@ -66,12 +66,8 @@ k:bind({}, 'space', pressFn({'cmd'}, 'space'))
 
 k:bind({}, 'c', pressFn({'ctrl'}, 'c'))
 
-k:bind({"cmd"}, "R", function()
-  hs.reload()
-end)
-
-k:bind({"cmd"}, 'delete', function()
-  hs.caffeinate.lockScreen()
+k:bind({"cmd"}, 'delete', nil, function()
+  hs.caffeinate.systemSleep()
 end)
 
 -- Enter Hyper Mode when F18 (Hyper/Capslock) is pressed
@@ -95,4 +91,5 @@ f18 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
 k:bind({'cmd'}, 'w', function() hs.window.focusedWindow():maximize() end)
 k:bind({'cmd'}, 'a', function() hs.window.focusedWindow():moveToUnit'[0,0,50,100]' end)
 k:bind({'cmd'}, 'd', function() hs.window.focusedWindow():moveToUnit'[50,0,100,100]' end)
+k:bind({'cmd'}, 'r', pressFn({}, 'F5'))
 
