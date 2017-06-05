@@ -1,13 +1,13 @@
 #!/bin/bash
 
-ZSH="$HOME/.oh-my-zsh"
+ZSH="${HOME}/.oh-my-zsh"
 
-if [ ! -d "$ZSH/custom/plugins/k" ]; then
-  git clone git@github.com:supercrabtree/k.git $ZSH/custom/plugins/k
+if [ ! -d "${ZSH}/custom/plugins/k" ]; then
+  git clone git@github.com:supercrabtree/k.git "${ZSH}/custom/plugins/k"
 fi
 
-if [ ! -d "$ZSH/custom/plugins/zsh-syntax-highlighting" ]; then
-  git clone git@github.com:zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
+if [ ! -d "${ZSH}/custom/plugins/zsh-syntax-highlighting" ]; then
+  git clone git@github.com:zsh-users/zsh-syntax-highlighting.git "${ZSH}/custom/plugins/zsh-syntax-highlighting"
 fi
 
 if [ ! -d "$ZSH/custom/plugins/cd-gitroot" ]; then
@@ -20,4 +20,8 @@ fi
 
 if [ ! -d "$ZSH/custom/plugins/zsh-notify" ]; then
   git clone git@github.com:marzocchi/zsh-notify.git $ZSH/custom/plugins/zsh-notify
+fi
+
+if [ ! -f "${ZSH}/themes/dracula.zsh-theme" ]; then
+  ln -s "${HOME}/dracula-theme/zsh/dracula.zsh" "${ZSH}/custom/themes/dracula.zsh-theme"
 fi

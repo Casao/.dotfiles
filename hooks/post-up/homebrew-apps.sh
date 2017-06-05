@@ -1,28 +1,28 @@
 #!/bin/bash -u
 
-brew update
+# brew update
 
-function installHomebrew {
-  if [ ! -n "$(brew list --versions "$1" 2>/dev/null)" ]; then
-    brew install $1
-  fi
-}
+# function installHomebrew {
+#   if [ ! -n "$(brew list --versions "$1" 2>/dev/null)" ]; then
+#     brew install $1
+#   fi
+# }
 
-function installCask {
-  if [ ! -n "$(brew cask list --versions "$1" 2>/dev/null)" ]; then
-    brew cask install $1
-  fi
-}
+# function installCask {
+#   if [ ! -n "$(brew cask list --versions "$1" 2>/dev/null)" ]; then
+#     brew cask install $1
+#   fi
+# }
 
-installHomebrew 'ctags'
-installHomebrew 'go'
-installHomebrew 'nodenv'
-installHomebrew 'plenv'
-installHomebrew 'pyenv'
-installHomebrew 'rbenv'
-installHomebrew 'rbenv-ctags'
-installHomebrew 'trash'
-installHomebrew 'pt'
+# installHomebrew 'ctags'
+# installHomebrew 'go'
+# installHomebrew 'nodenv'
+# installHomebrew 'plenv'
+# installHomebrew 'pyenv'
+# installHomebrew 'rbenv'
+# installHomebrew 'rbenv-ctags'
+# installHomebrew 'trash'
+# installHomebrew 'pt'
 
 # Cask
 # brew tap --full caskroom/cask
