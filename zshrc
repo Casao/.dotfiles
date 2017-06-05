@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="dracula"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -61,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
+  export EDITOR='vim'
 else
   export EDITOR='subl -w'
 fi
@@ -83,6 +83,7 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
+if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 
 # Aliases
 alias cdg='cd-gitroot'
@@ -95,8 +96,6 @@ alias ag='pt'
 # added by travis gem
 [ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
 
-if which dnvm.sh > /dev/null; then source dnvm.sh; fi
-
 vsc () {
     if [[ $# = 0 ]]
     then
@@ -107,4 +106,3 @@ vsc () {
     fi
 }
 
-[ -f ~/.git-fzf.sh ] && source ~/.git-fzf.sh
