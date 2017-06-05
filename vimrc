@@ -12,7 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim'
 Plugin 'fatih/vim-go'
 Plugin 'ap/vim-css-color'
-
+Plugin 'moll/vim-node'
 
 call vundle#end()            " required
-    filetype plugin indent on    " required
+filetype plugin indent on    " required
+
+syntax on
+color dracula
+set number
