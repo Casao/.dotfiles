@@ -102,7 +102,7 @@ module.exports = {
     'hyperterm-alternatescroll',
     "hyper-blink",
     "hyperborder",
-    "hyper-dracula"
+    "hyper-dracula",
   ],
 
   // in development, you can create a directory under
