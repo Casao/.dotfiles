@@ -22,6 +22,6 @@ if [ ! -d "$ZSH/custom/plugins/zsh-notify" ]; then
   git clone git@github.com:marzocchi/zsh-notify.git $ZSH/custom/plugins/zsh-notify
 fi
 
-if [ ! -f "${ZSH}/themes/dracula.zsh-theme" ]; then
+if [ ! -f "${ZSH}/custom/themes/dracula.zsh-theme" ]; then
   ln -s "${HOME}/dracula-theme/zsh/dracula.zsh" "${ZSH}/custom/themes/dracula.zsh-theme"
 fi
