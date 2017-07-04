@@ -106,3 +106,4 @@ vsc () {
     fi
 }
 
+zstyle ':completion:*:descriptions' format $'\n%B%F{cyan}%d completions:%f%b\n'
