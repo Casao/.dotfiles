@@ -172,6 +172,21 @@
                   "modifiers": [""]
                 }
               ]
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "mandatory": ["left_shift"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [{
+                  "key_code": "caps_lock",
+                  "modifiers": [""]
+                }
+              ]
               }
             ]
           }
