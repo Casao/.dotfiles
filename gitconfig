@@ -1,24 +1,29 @@
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
-	required = true
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+  required = true
 [user]
-	name = Colin Ewen
-	email = colin@draecas.com
+  name = Colin Ewen
+  email = colin@draecas.com
 [push]
-	default = simple
+  default = simple
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
+  editor = code --wait
 [init]
   templatedir = ~/.git_template
 [hub]
-	protocol = ssh
+  protocol = ssh
 [filter "lfs"]
-	smudge = git-lfs smudge %f
-	required = true
-	clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+  clean = git-lfs clean %f
 [alias]
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
 [hooks "confirm"]
-	match = binding.pry
-	match = puts
+  match = binding.pry
+  match = puts
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE

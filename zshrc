@@ -50,7 +50,7 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cd-gitroot colored-man-pages gem git git-prune hub k osx sublime zsh-notify zsh-syntax-highlighting)
+plugins=(docker brew bundler cd-gitroot colored-man-pages gem git git-prune hub k osx sublime zsh-notify zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,3 +107,5 @@ vsc () {
 }
 
 zstyle ':completion:*:descriptions' format $'\n%B%F{cyan}%d completions:%f%b\n'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

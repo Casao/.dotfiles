@@ -24,6 +24,7 @@
 	"hightlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Compare Side-By-Side",
 		"SublimeLinter-jshint",
 		"Vintage"
 	],

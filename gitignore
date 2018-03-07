@@ -9,3 +9,5 @@
 .Trashes
 *.sass-cache
 .vscode
+.powenv
+tags
