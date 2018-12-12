@@ -47,10 +47,12 @@ DISABLE_UPDATE_PROMPT=true
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+export FZF_BASE=/usr/local/opt/fzf
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker brew bundler cd-gitroot colored-man-pages gem git git-prune hub k osx sublime zsh-notify zsh-syntax-highlighting)
+plugins=(docker brew bundler cd-gitroot colored-man-pages fzf gem git git-prune hub k osx sublime zsh-notify zsh-syntax-highlighting vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,3 +111,11 @@ vsc () {
 zstyle ':completion:*:descriptions' format $'\n%B%F{cyan}%d completions:%f%b\n'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Vi Mode Overrides
+bindkey -M vicmd "^v" edit-command-line
+bindkey -M vicmd "v" visual-mode
+export KEYTIMEOUT=1
+function vi_mode_prompt_info() {
+  echo "${${${KEYMAP/vicmd/"%F{blue}[NORMAL]%f"}/visual/"%F{blue}[VISUAL]%f"}/(main|viins)/}"
+}
