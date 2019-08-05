@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dracula"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -52,7 +52,7 @@ export FZF_BASE=/usr/local/opt/fzf
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker brew bundler cd-gitroot colored-man-pages fzf gem git git-prune hub k osx sublime zsh-notify zsh-syntax-highlighting vi-mode)
+plugins=(docker brew bundler cd-gitroot colored-man-pages gem git git-prune k osx zsh-syntax-highlighting vi-mode fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,23 +94,9 @@ if type trash >/dev/null 2>&1; then
 fi
 
 alias ag='pt'
-
-# added by travis gem
-[ -f /Users/cewen/.travis/travis.sh ] && source /Users/cewen/.travis/travis.sh
-
-vsc () {
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
-        open -a "Visual Studio Code" --args "$F"
-    fi
-}
+alias autocop='bundle exec rake rubocop:lint_unpushed:auto_correct'
 
 zstyle ':completion:*:descriptions' format $'\n%B%F{cyan}%d completions:%f%b\n'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Vi Mode Overrides
 bindkey -M vicmd "^v" edit-command-line
@@ -119,3 +105,17 @@ export KEYTIMEOUT=1
 function vi_mode_prompt_info() {
   echo "${${${KEYMAP/vicmd/"%F{blue}[NORMAL]%f"}/visual/"%F{blue}[VISUAL]%f"}/(main|viins)/}"
 }
+
+export PATH="${HOME}/bin;${PATH}"
+
+[ -f "$HOME/.private_env" ] && source "$HOME/.private_env"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source ~/.purepower
+
+typeset -g POWERLEVEL9K_DIR_{HOME,HOME_SUBFOLDER,ETC,DEFAULT}_FOREGROUND=012
+typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=225
+typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=193
+typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=229
+typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,REMOTE_SUDO,REMOTE,SUDO}_FOREGROUND=005
+typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=229

@@ -1,8 +1,9 @@
 ---
-BUNDLE_BUILD__NOKOGIRI: --use-system-libraries
-BUNDLE_BUILD__NOKOGUMBO: ''
-BUNDLE_GEM__TEST: rspec
-BUNDLE_GEM__MIT: false
-BUNDLE_GEM__COC: false
+# BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
+BUNDLE_BUILD__NOKOGUMBO: ""
+BUNDLE_GEM__TEST: "rspec"
+BUNDLE_GEM__MIT: "false"
+BUNDLE_GEM__COC: "false"
 BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-I/usr/local/opt/openssl/include"
 BUNDLE_BUILD__PUMA: "--with-cppflags=-I/usr/local/opt/openssl/include"
+BUNDLE_BUILD__MYSQL2: "--with-ldflags=-L/usr/local/opt/openssl/lib"

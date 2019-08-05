@@ -168,8 +168,7 @@
                   }
                 },
                 "to": [{
-                  "key_code": "caps_lock",
-                  "modifiers": [""]
+                  "key_code": "caps_lock"
                 }
               ]
               },
@@ -183,8 +182,7 @@
                   }
                 },
                 "to": [{
-                  "key_code": "caps_lock",
-                  "modifiers": [""]
+                  "key_code": "caps_lock"
                 }
               ]
               }
