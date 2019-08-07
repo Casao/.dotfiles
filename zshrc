@@ -111,11 +111,5 @@ export PATH="${HOME}/bin;${PATH}"
 [ -f "$HOME/.private_env" ] && source "$HOME/.private_env"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-source ~/.purepower
-
-typeset -g POWERLEVEL9K_DIR_{HOME,HOME_SUBFOLDER,ETC,DEFAULT}_FOREGROUND=012
-typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=225
-typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=193
-typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=229
-typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,REMOTE_SUDO,REMOTE,SUDO}_FOREGROUND=005
-typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=229
+#To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
