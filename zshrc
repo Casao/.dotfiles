@@ -106,7 +106,7 @@ function vi_mode_prompt_info() {
   echo "${${${KEYMAP/vicmd/"%F{blue}[NORMAL]%f"}/visual/"%F{blue}[VISUAL]%f"}/(main|viins)/}"
 }
 
-export PATH="${HOME}/bin;${PATH}"
+export PATH="${HOME}/bin:${PATH}"
 
 [ -f "$HOME/.private_env" ] && source "$HOME/.private_env"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
