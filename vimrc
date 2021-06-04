@@ -9,10 +9,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'dracula/vim', { 'as': 'dracula' }
 Plugin 'fatih/vim-go'
 Plugin 'ap/vim-css-color'
 Plugin 'moll/vim-node'
+Plugin 'lambdalisue/suda.vim'
 Plugin 'tssm/fairyfloss.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -22,11 +22,13 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on
+set termguicolors
 color fairyfloss
 set number
 set laststatus=2
 set mouse=a
 set backspace=indent,eol,start
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>

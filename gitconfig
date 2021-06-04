@@ -9,7 +9,7 @@
   default = simple
 [core]
   excludesfile = ~/.gitignore
-  editor = code --wait
+	editor = vim
 [init]
   templatedir = ~/.git_template
 [hub]
