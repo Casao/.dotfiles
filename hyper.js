@@ -66,7 +66,7 @@ module.exports = {
     // make sure to use a full path if the binary name doesn't work
     // (e.g `C:\\Windows\\System32\\bash.exe` instad of just `bash.exe`)
     // if you're using powershell, make sure to remove the `--login` below
-    shell: '',
+    shell: '/usr/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
@@ -79,7 +79,7 @@ module.exports = {
     bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -87,6 +87,10 @@ module.exports = {
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
+    
+    hyperTabs: {
+    	tabIconsColored: true
+    }
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -98,11 +102,15 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperline',
-    'hyperterm-alternatescroll',
-    "hyper-blink",
-    "hyperborder",
-    "hyper-dracula",
+    "hyper-sailorscout",
+    "hyper-active-tab",
+    "hyper-samewd",
+    "hyper-statusline",
+    "hyperterm-paste",
+    "hypertheme",
+    "hyperterm-cursor",
+    "hyper-mac-controls",
+    "hyper-tabs-enhanced"
   ],
 
   // in development, you can create a directory under
