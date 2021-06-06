@@ -73,6 +73,7 @@ setopt hist_ignore_all_dups inc_append_history
 HISTFILE=~/.zhistory
 HISTSIZE=4096
 SAVEHIST=4096
+export PATH="${HOME}/bin:${HOME}/.nodenv/bin:${PATH}"
 
 # awesome cd movements from zshkit
 setopt autocd autopushd pushdminus pushdsilent pushdtohome cdablevars
@@ -106,7 +107,6 @@ function vi_mode_prompt_info() {
   echo "${${${KEYMAP/vicmd/"%F{blue}[NORMAL]%f"}/visual/"%F{blue}[VISUAL]%f"}/(main|viins)/}"
 }
 
-export PATH="${HOME}/bin:${PATH}"
 
 [ -f "$HOME/.private_env" ] && source "$HOME/.private_env"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
