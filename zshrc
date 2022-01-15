@@ -52,7 +52,7 @@ export FZF_BASE=/usr/local/opt/fzf
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker brew bundler cd-gitroot colored-man-pages gem git git-prune k osx zsh-syntax-highlighting vi-mode fzf)
+plugins=(docker brew bundler cd-gitroot colored-man-pages gem git git-prune k macos zsh-syntax-highlighting vi-mode fzf)
 
 source $ZSH/oh-my-zsh.sh
 
